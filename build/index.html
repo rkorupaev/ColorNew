@@ -27,6 +27,7 @@
 <path d="M12.3496 4.65088L17.9997 10.301" stroke="#4C4C4C" stroke-width="1.30726" stroke-linecap="round"></path>
 </symbol><symbol id="play_button" viewBox="0 0 16 16">
 <path d="M7.89837 14.7967C11.7082 14.7967 14.7967 11.7082 14.7967 7.89837C14.7967 4.08851 11.7082 1 7.89837 1C4.08851 1 1 4.08851 1 7.89837C1 11.7082 4.08851 14.7967 7.89837 14.7967Z" stroke="#4C4C4C" stroke-width="1.30726" stroke-linecap="round"></path>
+<path d="M6.51855 5.82318C6.51855 5.53059 6.84465 5.35607 7.0881 5.51837L10.2004 7.59321C10.4179 7.73821 10.4179 8.05783 10.2004 8.20283L7.0881 10.2777C6.84465 10.44 6.51855 10.2655 6.51855 9.97286V5.82318Z" stroke="#4C4C4C" stroke-width="1.30726" stroke-linecap="round"></path>
 </symbol><symbol id="telegram_icon" viewBox="0 0 29 29">
 <circle cx="14.873" cy="14.5703" r="13.875" fill="#2C2C2C"></circle>
 </symbol><symbol id="vk_icon" viewBox="0 0 28 29">
@@ -36,9 +37,31 @@
 </symbol></svg>
   </div>
   <header class="main-header container">
+    <svg width="28" height="41" viewBox="0 0 28 41" fill="none" class="main-header__logo">
+      <use xlink:href="#logo"></use>
+    </svg>
+    <ul class="main-header__navigation">
+      <li class="main-header__navigation-item"><a href="#">Инвестиции</a></li>
+      <li class="main-header__navigation-item"><a href="#">Займы</a></li>
+      <li class="main-header__navigation-item"><a href="#">Реферальная программа</a></li>
+      <li class="main-header__navigation-item"><a href="#">Блог</a></li>
+      <li class="main-header__navigation-item"><a href="#">О нас</a></li>
+      <li class="main-header__navigation-item"><a href="#">Документы</a></li>
+    </ul>
+    <div class="main-header__controls-wrapper">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="main-header__controls-item">
+        <use xlink:href="#play_button"></use>
+      </svg>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="main-header__controls-item">
+        <use xlink:href="#maximize_button"></use>
+      </svg>
+      <svg width="17" height="14" viewBox="0 0 17 14" fill="none" class="main-header__controls-item">
+        <use xlink:href="#mute_button"></use>
+      </svg>
+    </div>
+    <button type="button" class="main-header__nav-button button">Открыть меню</button>
   </header>
   <main class="main-body container">
-    test
   </main>
   <footer class="main-footer container">
 
