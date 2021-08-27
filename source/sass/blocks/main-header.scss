@@ -7,6 +7,8 @@
 }
 
 .main-header__logo {
+  justify-content: flex-start;
+  width: auto;
   margin-right: auto;
 }
 
@@ -16,13 +18,60 @@
 
 .main-header__controls-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-right: 30px;
+  min-width: 60px;
+}
+
+.main-header__controls-item {
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .main-header__nav-button {
+  position: relative;
   font-size: 0;
-  background-color: red;
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  transition-duration: 0.3s;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: $white;
+    right: 2px;
+    border-radius: 5px;
+  }
+
+  &:before {
+    top: 35%;
+    width: 35px;
+  }
+
+  &:after {
+    top: 55%;
+    width: 25px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
 }

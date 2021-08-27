@@ -37,9 +37,11 @@
 </symbol></svg>
   </div>
   <header class="main-header container">
-    <svg width="28" height="41" viewBox="0 0 28 41" fill="none" class="main-header__logo">
-      <use xlink:href="#logo"></use>
-    </svg>
+    <a href="index.html" class="main-header__logo">
+      <svg width="28" height="41" viewBox="0 0 28 41" fill="none">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </a>
     <ul class="main-header__navigation">
       <li class="main-header__navigation-item"><a href="#">Инвестиции</a></li>
       <li class="main-header__navigation-item"><a href="#">Займы</a></li>
@@ -49,15 +51,21 @@
       <li class="main-header__navigation-item"><a href="#">Документы</a></li>
     </ul>
     <div class="main-header__controls-wrapper">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="main-header__controls-item">
-        <use xlink:href="#play_button"></use>
-      </svg>
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="main-header__controls-item">
-        <use xlink:href="#maximize_button"></use>
-      </svg>
-      <svg width="17" height="14" viewBox="0 0 17 14" fill="none" class="main-header__controls-item">
-        <use xlink:href="#mute_button"></use>
-      </svg>
+      <button type="button" class="button main-header__controls-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <use xlink:href="#play_button"></use>
+        </svg>
+      </button>
+      <button type="button" class="button main-header__controls-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <use xlink:href="#maximize_button"></use>
+        </svg>
+      </button>
+      <button type="button" class="button main-header__controls-item">
+        <svg width="17" height="14" viewBox="0 0 17 14" fill="none">
+          <use xlink:href="#mute_button"></use>
+        </svg>
+      </button>
     </div>
     <button type="button" class="main-header__nav-button button">Открыть меню</button>
   </header>
