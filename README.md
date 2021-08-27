@@ -1,2 +1,3 @@
 # ColorNew
-Test project for Color New
+Test project for Color New.
+(HTML, CSS, JS, Gulp, Sass)
