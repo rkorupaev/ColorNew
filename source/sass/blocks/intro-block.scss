@@ -12,6 +12,7 @@
 .intro-block__title {
   margin: 0 23px;
 
+  font-family: $font-primary-bold;
   font-weight: bold;
   font-size: 25px;
   line-height: 124%;
@@ -37,15 +38,16 @@
   background-image: url("../../img/youtube_placeholder_mobile.png");
   background-repeat: no-repeat;
   background-position: right;
-
-  & svg {
-    transition-duration: 0.3s;
-  }
+  outline: 0;
 
   &:hover,
   &:focus {
     & svg {
-      transform: scale(1.1);
+      animation: right-left;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-duration: 0.5s;
+      animation-direction: alternate;
     }
   }
 

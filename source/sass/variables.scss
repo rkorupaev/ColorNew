@@ -6,8 +6,8 @@ $main-orange: #FF970A;
 $white: #FFFFFF;
 $black: #000000;
 $border-gray: #EBEBEB;
-$text-grey: #939598;
-$rent-time-grey: #F1F2F2;
+$text-grey: #A3A3A3;
+$popup-background: linear-gradient(310deg, #000000 -120.88%, rgba(155, 155, 155, 0.3) 127.52%);;
 $faq-text-grey: #6A6A6A;
 $footer-border-grey: #D5DAE0;
 $slider-button-background: rgba(0, 0, 0, 0.24);
@@ -16,7 +16,10 @@ $select-background: #F5F5F5;
 $intro-link-background: linear-gradient(124.94deg, #000000 -120.88%, rgba(155, 155, 155, 0) 127.52%);
 
 //font-family
-$font-primary: "SF-UI-DisplayBold",
+$font-primary: "SF-UI-Display",
+"Arial",
+sans-serif;
+$font-primary-bold: "SF-UI-DisplayBold",
 "Arial",
 sans-serif;
 
@@ -26,3 +29,11 @@ $retina-dppx: 1.5dppx;
 
 
 //animation
+@keyframes right-left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 20px;
+  }
+}
