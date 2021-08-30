@@ -28,15 +28,39 @@
   margin-top: auto;
   width: 197px;
   min-height: 56px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   background: $intro-link-background;
   backdrop-filter: blur(2.55466px);
+  background-image: url("../../img/youtube_placeholder_mobile.png");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  & svg {
+    transition-duration: 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    & svg {
+      transform: scale(1.1);
+    }
+  }
+
+  &:active {
+    & svg {
+      transform: scale(0.9);
+    }
+  }
 }
 
 .intro-block__link-text {
   width: 93px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 11px;
   line-height: 99.5%;
   margin-left: 15px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
